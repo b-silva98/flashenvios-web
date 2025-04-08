@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./Styles/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <title>FlashEnvios</title>
+</head>
+<body>
+     <!-- Cabecera de la página -->
+     <header>
+        <nav class="nav-contenedor">
+            <div class="cajabuscar" id="Inicio">
+                <form method="get" id="buscarform">
+                    <fieldset>
+                        <h1><a href="#Inicio" class="boton-envio">FlashEnvíos S.A.</a></h1>
+                        <input type="text" placeholder="Emisor, Destinatario">
+                        <select name="" id="">
+                            <option value="" disabled selected hidden>Selecciona forma de pago...</option>
+                            <option value="">Tarjeta de credito/debito</option>
+                            <option value="">PayPal</option>
+                            <option value="">Transferencia bancaria</option>
+                            <option value="">Efectivo</option>
+                        </select>
+                        <select name="" id="">
+                            <option value="" disabled selected hidden>Selecciona el estado de entrega...</option>
+                            <option value="">En proceso</option>
+                            <option value="">Preparando envio</option>
+                            <option value="">Enviado</option>
+                            <option value="">Entregado</option>
+                            <option value="">Cancelado</option>
+                        </select>
+                        <button class="boton" type="submit">
+                            <i class="fa fa-search"></i>
+                        </button>
+                        <h1><a href="./envio.html" class="boton-envio">Nuevo envío</a></h1>
+                    </fieldset>
+                </form>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Contenido principal -->
+    <main>
+        <section>
+            <h1>Listado de Envios de Paquetes</h1>
+            <table>
+                <head>
+                    <tr>
+                        <th>ID</th>
+                        <th>EMISOR</th>
+                        <th>DESTINATARIO</th>
+                        <th>ID VENTA</th>
+                        <th >COMUNA</th>
+                        <th>ESTADO DE PAGO</th>
+                        <th>ESTADO DE ENVIO</th>
+                        <th>TIPO DE SERVICIO</th>
+                        <th>FECHA DE ENTREGA</th>
+                    </tr>
+                </head>
+                <tbody>
+                    <tr>
+                        <td>1001</td>
+                        <td>Almacén Central</td>
+                        <td>Juan Pérez</td>
+                        <td>V-5001</td>
+                        <td></td>
+                        <td class="pagado">Pagado</td>
+                        <td class="entregado">Entregado</td>
+                        <td>Express</td>
+                        <td>15/03/2023</td>
+                    </tr>
+                    <tr>
+                        <td>1002</td>
+                        <td>Tienda Online</td>
+                        <td>María Gómez</td>
+                        <td>V-5002</td>
+                        <td></td>
+                        <td class="pagado">Pagado</td>
+                        <td class="enviado">Enviado</td>
+                        <td>Estándar</td>
+                        <td>20/03/2023</td>
+                    </tr>
+                    <tr>
+                        <td>1003</td>
+                        <td>Distribuidora Norte</td>
+                        <td>Carlos Ruiz</td>
+                        <td>V-5003</td>
+                        <td></td>
+                        <td class="pendiente">Pendiente</td>
+                        <td class="enviado">Enviado</td>
+                        <td>Express</td>
+                        <td>18/03/2023</td>
+                    </tr>
+                    <tr>
+                        <td>1004</td>
+                        <td>Mayorista Sur</td>
+                        <td>Ana López</td>
+                        <td>V-5004</td>
+                        <td></td>
+                        <td class="pagado">Pagado</td>
+                        <td class="entregado">Entregado</td>
+                        <td>Prioritario</td>
+                        <td>12/03/2023</td>
+                    </tr>
+                    <tr>
+                        <td>1005</td>
+                        <td>Tienda Online</td>
+                        <td>Pedro Martínez</td>
+                        <td>V-5005</td>
+                        <td></td>
+                        <td class="cancelado">Cancelado</td>
+                        <td class="cancelado">Cancelado</td>
+                        <td>Estándar</td>
+                        <td>-</td>
+                    </tr>
+                    <tr>
+                        <td>1006</td>
+                        <td>Almacén Central</td>
+                        <td>Laura Díaz</td>
+                        <td>V-5006</td>
+                        <td></td>
+                        <td class="pagado">Pagado</td>
+                        <td class="enviado">Enviado</td>
+                        <td>Express</td>
+                        <td>22/03/2023</td>
+                    </tr>
+                    <tr>
+                        <td>1007</td>
+                        <td>Distribuidora Este</td>
+                        <td>Roberto Sánchez</td>
+                        <td>V-5007</td>
+                        <td></td>
+                        <td class="pendiente">Pendiente</td>
+                        <td>En preparación</td>
+                        <td>Estándar</td>
+                        <td>25/03/2023</td>
+                    </tr>
+                    <tr>
+                        <td>1008</td>
+                        <td>Tienda Online</td>
+                        <td>Sofía Castro</td>
+                        <td>V-5008</td>
+                        <td></td>
+                        <td class="pagado">Pagado</td>
+                        <td class="entregado">Entregado</td>
+                        <td>Prioritario</td>
+                        <td>10/03/2023</td>
+                    </tr>
+                    <tr>
+                        <td>1009</td>
+                        <td>Mayorista Oeste</td>
+                        <td>David Romero</td>
+                        <td>V-5009</td>
+                        <td></td>
+                        <td class="pagado">Pagado</td>
+                        <td class="enviado">Enviado</td>
+                        <td>Express</td>
+                        <td>19/03/2023</td>
+                    </tr>
+                    <tr>
+                        <td>1010</td>
+                        <td>Almacén Central</td>
+                        <td>Elena Torres</td>
+                        <td>V-5010</td>
+                        <td></td>
+                        <td class="cancelado">Cancelado</td>
+                        <td class="cancelado">Cancelado</td>
+                        <td>Estándar</td>
+                        <td>-</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+    </main>
+
+    <!-- Pie de página -->
+    <footer>
+        <p>Derechos reservados &copy; 2025</p>
+        <address>
+            Contacto: <a href="Contacto@FlashEnvios.com">Contacto@FlashEnvios.com</a>
+        </address>
+    </footer>
+</body>
+</html>

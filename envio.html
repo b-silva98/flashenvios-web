@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de Registro de Envíos</title>
+    <link rel="stylesheet" href="./Styles/styles.css">
+</head>
+<body>
+    <header>
+        <nav >
+            <div class="cajabuscar">
+                <form method="get" id="buscarform">
+                    <fieldset>
+                        <h1><a href="./index.html" class="boton-envio">FlashEnvíos S.A.</a></h1>
+                    </fieldset>
+                </form>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section class="contenedor-formulario">
+            <div class="form-container">
+                <h1>FlashEnvíos S.A.</h1>
+                <form action="" method="post">
+                    <div class="form-group">
+                        <label for="emisor">Emisor:</label>
+                        <select id="emisor" name="emisor" required>
+                            <option value="">Seleccione un emisor</option>
+                            <option value="Empresa A">Logistica Pampa S.A.</option>
+                            <option value="Empresa B">Correo Andino</option>
+                            <option value="Empresa C">Fletes Argentinos</option>
+                            <option value="Particular">Particular</option>
+                        </select>
+                    </div>
+        
+                    <div class="form-group">
+                        <label for="destinatario">Destinatario:</label>
+                        <select id="destinatario" name="destinatario" required>
+                            <option value="">Seleccione un destinatario</option>
+                            <option value="Cliente X">Martina Lopez</option>
+                            <option value="Cliente Y">Juan Carlos Gimenez</option>
+                            <option value="Cliente Z">Ricardo Ortiz</option>
+                            <option value="Oficina Central">Oficina Central</option>
+                        </select>
+                    </div>
+        
+                    <div class="form-group">
+                        <label for="telefono">Teléfono móvil destinatario:</label>
+                        <input type="tel" id="telefono" name="telefono" required placeholder="Ej: +56912345678">
+                    </div>
+        
+                    <div class="form-group">
+                        <label for="coordenadas">Coordenadas de geolocalización destinatario:</label>
+                        <input type="text" id="coordenadas" name="coordenadas" required placeholder="Ej: -33.45694, -70.64827">
+                    </div>
+        
+                    <div class="form-group">
+                        <label for="cantidad">Cantidad de paquetes:</label>
+                        <input type="number" id="cantidad" name="cantidad" min="1" required>
+                    </div>
+        
+                    <div class="form-group">
+                        <label>Estado del Pago:</label>
+                        <div class="radio-group">
+                            <label>
+                                <input type="radio" name="pago" value="POR PAGAR" checked> POR PAGAR
+                            </label>
+                            <label>
+                                <input type="radio" name="pago" value="PAGADO"> PAGADO
+                            </label>
+                        </div>
+                    </div>
+        
+                    <div class="form-group">
+                        <label for="envio">Estado del Envío:</label>
+                        <select id="envio" name="envio" required>
+                            <option value="POR ENVIAR">POR ENVIAR</option>
+                            <option value="EN TRÁNSITO">EN TRÁNSITO</option>
+                            <option value="ENTREGADO">ENTREGADO</option>
+                            <option value="DEMORADO">DEMORADO</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <button type="submit">REGISTRAR ENVÍO</button>
+                    </div>
+                </form>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>Derechos reservados &copy; 2025</p>
+        <address>
+            Contacto: <a href="Contacto@FlashEnvios.com">Contacto@FlashEnvios.com</a>
+        </address>
+    </footer>
+</body>
+</html>

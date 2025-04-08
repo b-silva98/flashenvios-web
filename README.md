@@ -6,7 +6,7 @@ Este proyecto es una simulación de plataforma web para el registro y seguimient
 ## 🖼️ Capturas del Proyecto
 
 ### Página de inicio:
-![Inicio](Imagenes/captura1.png)
+![Inicio](https://github.com/b-silva98/flashenvios-web/blob/main/Imagenes/Principal.png?raw=true)
 
 ### Formulario de envío:
 ![Formulario](https://github.com/b-silva98/flashenvios-web/blob/main/Imagenes/Formulario.png?raw=true)

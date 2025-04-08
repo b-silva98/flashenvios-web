@@ -3,7 +3,15 @@
 Este proyecto es una simulación de plataforma web para el registro y seguimiento de envíos. Fue desarrollado como parte de un trabajo práctico universitario utilizando HTML y CSS puro.
 
 ---
+## 🖼️ Capturas del Proyecto
 
+### Página de inicio:
+![Inicio](Imagenes/captura1.png)
+
+### Formulario de envío:
+![Formulario](Imagenes/captura2.png)
+
+---
 ## 📄 Descripción del Proyecto
 
 El sitio web representa una empresa ficticia llamada **FlashEnvíos S.A.**, que permite registrar paquetes, seleccionar emisores y destinatarios, establecer el estado del envío y del pago, además de buscar registros mediante un formulario principal.
@@ -40,7 +48,7 @@ El proyecto se divide en dos páginas:
 
 - **Brian Emanuel Silva**
 - Carrera: *Analista Programador Universitario*
-- Universidad: *[Nombre de tu universidad]*
+- Universidad: *Universidad Nacional de Jujuy*
 
 ---
 
